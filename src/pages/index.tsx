@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import NavBar from "@/Components/Navbar";
 import style from "@/styles/Home.module.scss";
-import Home from "@/Components/Home";
 import styles from "@/styles/Home.module.scss";
 import { faUserSlash, faUserNinja, faChildReaching } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
