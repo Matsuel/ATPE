@@ -1,0 +1,28 @@
+.Contact_container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #fff;
+
+    .ContactImage {
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        height: 70vh;
+        background-image: url('../assets/imgEscrime3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ContactTitle {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 6rem;
+        }
+
+    }
+}
