@@ -1,0 +1,132 @@
+.Professionnels_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #fff;
+
+    .Professionnels_Top {
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 20px;
+        background-image: url('../assets/personne.jpg');
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Professionnels_Title {
+            width: 80%;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 6rem;
+            text-align: center;
+        }
+    }
+
+    .Professionnels1 {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .Professionnels1_Title {
+            width: 80%;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .ProfessionnelsSeparator {
+            width: 15%;
+            height: 10px;
+            border-radius: 25px;
+            background: linear-gradient(to right, #85e1eb, #bfe1d1, #e7e2c2);
+        }
+
+        .Professionnels1_Text {
+            width: 80%;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    .Professionnels3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .Professionnels3_ContentLeft {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .Professionnels3_Title {
+                color: #000;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 2.4rem;
+                text-align: start;
+            }
+
+            .Professionnels3_Text {
+                color: #000;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                text-align: start;
+            }
+        }
+
+    }
+
+    .ProfessionnelsProgramme {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ProfessionnelsProgramme_Content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .ProfessionnelsProgramme_Title {
+                width: 100%;
+                color: #000;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 2.4rem;
+                text-align: start;
+            }
+
+            .ProfessionnelsProgramme_Text {
+                color: #000;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 1.2rem;
+                text-align: start;
+            }
+        }
+    }
+}
