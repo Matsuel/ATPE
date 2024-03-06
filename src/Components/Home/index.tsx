@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './style.module.scss';
 import { faUserSlash, faUserNinja, faChildReaching } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FFE from '@/assets/ffe.png';
 
 interface HomeProps {
 
@@ -66,6 +68,44 @@ const Home = ({ }: HomeProps) => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className={styles.Home3}>
+                <h2 className={styles.Home3_title}>
+                    S'épanouir avec l'escrime...
+                </h2>
+
+                <p className={styles.Home3_text}>
+                    Porteuse de valeurs fondamentales, l’escrime est un moyen d'éducation exceptionnel, un facteur d'épanouissement de la personne, d'intégration sociale et de promotion.
+                    La lutte contre les discriminations et la parité y sont promues.
+                    Des valeurs morales personnelles comme la loyauté, le courage, la combativité, le dépassement de soi, la rigueur, l'autonomie et des valeurs citoyennes comme le respect, la solidarité, la tolérance, l'esprit d'équipe, le plaisir, font de l’escrime une véritable école de vie
+                </p>
+
+                <p className={styles.Home3_signature}>
+                    Féderation Française d'Escrime
+                </p>
+
+                <Image src={FFE} alt="logo" width={200} />
+
+            </div>
+
+            <div className={styles.Home4}>
+                <h2 className={styles.Home4_title}>
+                    "Que l'on s'efforce d'être pleinement humain
+                    et il n'y aura plus de place pour le mal."
+                </h2>
+                <p className={styles.Home4_signature}>
+                    - Confucius
+                </p>
+            </div>
+
+            <div className={styles.Home5}>
+                <h2 className={styles.Home5_title}>
+                    Rencontrons-nous
+                </h2>
+                <a className={styles.Home5_button} href="/contact">
+                    Nous contacter
+                </a>
             </div>
         </div>
     );
