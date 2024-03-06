@@ -184,6 +184,9 @@
                 text-align: start;
                 margin-top: 20px;
                 margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
             }
 
             .ProfessionnelsProgramme_TextProg {
@@ -196,8 +199,12 @@
                 margin-bottom: 20px;
                 display: flex;
                 flex-direction: row;
-                align-items: center;
                 gap: 10px;
+            }
+
+            .ProfessionnelProgramme_Icon {
+                width: 24px;
+                height: 24px;
             }
         }
     }

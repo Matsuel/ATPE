@@ -3,7 +3,10 @@ import styles from '@/styles/Professionnels.module.scss';
 import NavBar from '@/Components/Navbar';
 import Image2 from '@/assets/equipement.jpg';
 import Check from '@/assets/check.svg';
+import Cible from '@/assets/cible.svg';
+import Calendar from '@/assets/calendar.svg';
 import Image from 'next/image';
+import User from '@/assets/user.svg';
 import Footer from '@/Components/Footer';
 
 interface ProfessionnelsProps {
@@ -172,9 +175,15 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                             return (
                                 <div key={index} className={styles.ProfessionnelsProgramme_Card}>
                                     <h3 className={styles.ProfessionnelsProgramme_CardTitle}>{item.title}</h3>
-                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>{item.objectifs}</p>
+                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>
+                                        <Image src={Cible} alt="cible" className={styles.ProfessionnelProgramme_Icon}/>
+                                        {item.objectifs}
+                                    </p>
                                     <p className={styles.ProfessionnelsProgramme_Text}>{item.objectifsPara}</p>
-                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>{item.pourQui}</p>
+                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>
+                                        <Image src={User} alt="user" />
+                                        {item.pourQui}
+                                    </p>
                                     {
                                         item.pourQuiTab.map((item: string, index: number) => {
                                             return (
@@ -183,7 +192,10 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                                         })
                                     }
                                     <p className={styles.ProfessionnelsProgramme_Text}>{item.speech}</p>
-                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>{item.programme}</p>
+                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>
+                                        <Image src={Calendar} alt="calendar" />
+                                        {item.programme}
+                                        </p>
                                     {
                                         item.programmes.map((item: string, index: number) => {
                                             return (
