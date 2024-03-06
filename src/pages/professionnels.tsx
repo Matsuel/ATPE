@@ -213,8 +213,12 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                     }
                 </div>
 
-
+                <h2 className={styles.ProfessionnelsProgramme_Ensemble}>
+                    Ensemble, nous pouvons faire la différence
+                </h2>
             </div>
+
+            <Footer />
         </div>
     );
 };
