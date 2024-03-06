@@ -156,6 +156,7 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
             <div className={styles.ProfessionnelsProgramme}>
                 <div className={styles.ProfessionnelsProgramme_Content}>
                     <h2 className={styles.ProfessionnelsProgramme_Title}>
+                        <Image src={Calendar} alt="calendar" width={30} height={30} />
                         Programme de la formation
                     </h2>
 
@@ -174,7 +175,7 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                         Programmes.map((item: ProfessionnelProgramme, index: number) => {
                             return (
                                 <div key={index} className={styles.ProfessionnelsProgramme_Card}>
-                                    <h3 className={styles.ProfessionnelsProgramme_CardTitle}>{item.title}</h3>
+                                    <h3 className={styles.ProfessionnelsProgramme_CardTitle}>{index+1}. {item.title}</h3>
                                     <p className={styles.ProfessionnelsProgramme_TextTitle}>
                                         <Image src={Cible} alt="cible" className={styles.ProfessionnelProgramme_Icon}/>
                                         {item.objectifs}
