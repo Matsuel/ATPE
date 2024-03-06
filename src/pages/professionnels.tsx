@@ -14,13 +14,13 @@ interface ProfessionnelText {
 
 interface ProfessionnelProgramme {
     title: string;
-    objectifs : string;
+    objectifs: string;
     objectifsPara: string;
     pourQui: string;
     pourQuiTab: string[];
-    speech : string;
+    speech: string;
     programme: string;
-    programmes : string[];
+    programmes: string[];
 }
 
 const ProfessionnelTexts: ProfessionnelText[] = [
@@ -46,16 +46,16 @@ const ProfessionnelsTexts2: ProfessionnelText[] = [
 
 const ProfessionnelsProgramme: ProfessionnelText[] = [
     {
-        content:"Lors des modules de reconstruction thérapeutique, la prise en charge est totale puisqu'elle concerne non seulement ce qui peut être raconté mais aussi ce qui doit être réparé de façon psychique, émotionnelle ainsi que dans les sens/sensations."
+        content: "Lors des modules de reconstruction thérapeutique, la prise en charge est totale puisqu'elle concerne non seulement ce qui peut être raconté mais aussi ce qui doit être réparé de façon psychique, émotionnelle ainsi que dans les sens/sensations."
     },
     {
-        content:"Ces dimensions se devant d'être accompagnées simultanément, car elles sont partie intégrante du processus de réparation, au delà du contenu théorique, la proposition pour vous durant ces stages est d'expérimenter les étapes de reconstruction vécues par les patient-e-s."
+        content: "Ces dimensions se devant d'être accompagnées simultanément, car elles sont partie intégrante du processus de réparation, au delà du contenu théorique, la proposition pour vous durant ces stages est d'expérimenter les étapes de reconstruction vécues par les patient-e-s."
     }
 ]
 
-const Programmes : ProfessionnelProgramme[] = [
+const Programmes: ProfessionnelProgramme[] = [
     {
-        title:"Stage initiation 1/2 journée",
+        title: "Stage initiation 1/2 journée",
         objectifs: "Objectifs",
         objectifsPara: "Sur cette journée d'initiation, ATPE vous propose de découvrir comment se déroulent les modules de reconstruction thérapeutique pour les victimes de violences sexuelles et comment vous pouvez contribuer à accompagner vos patients sur cette problématique.",
         pourQui: "Pour qui ?",
@@ -64,7 +64,7 @@ const Programmes : ProfessionnelProgramme[] = [
             "Toute personne intéressée par l'escrime en tant qu'outil de transfert thérapeutique et/ou professionnel.",
             "Toute personne accompagnant des victimes de violences (verbales, physiques, sexuelles)."
         ],
-        speech:"Durant la journée chaque thérapeute sera amené à expérimenter de façon personnelle les transferts possibles par l'escrime comme la capacité à poser ses limites, la nécessité de savoir se protéger ou encore comment la confiance en soi, en l'autre peut à nouveau être présente et se développer.",
+        speech: "Durant la journée chaque thérapeute sera amené à expérimenter de façon personnelle les transferts possibles par l'escrime comme la capacité à poser ses limites, la nécessité de savoir se protéger ou encore comment la confiance en soi, en l'autre peut à nouveau être présente et se développer.",
         programme: "Programme (9H30/12H30)",
         programmes: [
             "Point sur les violences aujourd'hui",
@@ -76,7 +76,7 @@ const Programmes : ProfessionnelProgramme[] = [
         ]
     },
     {
-        title:"Stage exploration 2 jours",
+        title: "Stage exploration 2 jours",
         objectifs: "Objectifs",
         objectifsPara: "Vous familiariser avec l'escrime en tant qu'outil de résonance des comportements. Vous permettre de résoudre, le cas échéant, ce qui a été laissé de côté dans votre propre parcours thérapeutique et que vous souhaitez voir évoluer.",
         pourQui: "Pour qui ?",
@@ -85,7 +85,7 @@ const Programmes : ProfessionnelProgramme[] = [
             "Toute personne intéressée par l'escrime en tant qu'outil de transfert thérapeutique et/ou professionnel.",
             "Toute personne accompagnant des victimes de violences (verbales, physiques, sexuelles)."
         ],
-        speech:"Durant ces deux jours, le pont est constamment fait entre l'escrime et les sujet traités (limites, confiance, protection, leadership, coopération...) et chaque stagiaire se voit proposer un espace d'expression où il peut naviguer de façon libre entre posture d'expérimentateur et posture réflexive.",
+        speech: "Durant ces deux jours, le pont est constamment fait entre l'escrime et les sujet traités (limites, confiance, protection, leadership, coopération...) et chaque stagiaire se voit proposer un espace d'expression où il peut naviguer de façon libre entre posture d'expérimentateur et posture réflexive.",
         programme: "Programme",
         programmes: [
             "Echauffement, maniement du sabre",
@@ -153,7 +153,7 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                     <h2 className={styles.ProfessionnelsProgramme_Title}>
                         Programme de la formation
                     </h2>
-                    
+
                     {
                         ProfessionnelsProgramme.map((item: ProfessionnelText, index: number) => {
                             return (
@@ -165,9 +165,37 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                 </div>
 
                 <div className={styles.ProfessionnelsProgramme_Cards}>
+                    {
+                        Programmes.map((item: ProfessionnelProgramme, index: number) => {
+                            return (
+                                <div key={index} className={styles.ProfessionnelsProgramme_Card}>
+                                    <h3 className={styles.ProfessionnelsProgramme_CardTitle}>{item.title}</h3>
+                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.objectifs}</p>
+                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.objectifsPara}</p>
+                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.pourQui}</p>
+                                    {
+                                        item.pourQuiTab.map((item: string, index: number) => {
+                                            return (
+                                                <p key={index} className={styles.ProfessionnelsProgramme_Text}>{item}</p>
+                                            )
+                                        })
+                                    }
+                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.speech}</p>
+                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.programme}</p>
+                                    {
+                                        item.programmes.map((item: string, index: number) => {
+                                            return (
+                                                <p key={index} className={styles.ProfessionnelsProgramme_Text}>{item}</p>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            )
+                        })
+                    }
                 </div>
 
-                
+
             </div>
         </div>
     );
