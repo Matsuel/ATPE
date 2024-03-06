@@ -12,6 +12,17 @@ interface ProfessionnelText {
     content: string;
 }
 
+interface ProfessionnelProgramme {
+    title: string;
+    objectifs : string;
+    objectifsPara: string;
+    pourQui: string;
+    pourQuiTab: string[];
+    speech : string;
+    programme: string;
+    programmes : string[];
+}
+
 const ProfessionnelTexts: ProfessionnelText[] = [
     {
         content: "Violence verbale, morale, physique, sexuelle, conjugale..."
@@ -39,6 +50,52 @@ const ProfessionnelsProgramme: ProfessionnelText[] = [
     },
     {
         content:"Ces dimensions se devant d'être accompagnées simultanément, car elles sont partie intégrante du processus de réparation, au delà du contenu théorique, la proposition pour vous durant ces stages est d'expérimenter les étapes de reconstruction vécues par les patient-e-s."
+    }
+]
+
+const Programmes : ProfessionnelProgramme[] = [
+    {
+        title:"Stage initiation 1/2 journée",
+        objectifs: "Objectifs",
+        objectifsPara: "Sur cette journée d'initiation, ATPE vous propose de découvrir comment se déroulent les modules de reconstruction thérapeutique pour les victimes de violences sexuelles et comment vous pouvez contribuer à accompagner vos patients sur cette problématique.",
+        pourQui: "Pour qui ?",
+        pourQuiTab: [
+            "Thérapeutes, médecins, personnel médical, coachs...",
+            "Toute personne intéressée par l'escrime en tant qu'outil de transfert thérapeutique et/ou professionnel.",
+            "Toute personne accompagnant des victimes de violences (verbales, physiques, sexuelles)."
+        ],
+        speech:"Durant la journée chaque thérapeute sera amené à expérimenter de façon personnelle les transferts possibles par l'escrime comme la capacité à poser ses limites, la nécessité de savoir se protéger ou encore comment la confiance en soi, en l'autre peut à nouveau être présente et se développer.",
+        programme: "Programme (9H30/12H30)",
+        programmes: [
+            "Point sur les violences aujourd'hui",
+            "Vue globale du parcours",
+            "Rôle et mission du thérapeute",
+            "Expérimentation personnalisée sur plusieurs thématiques",
+            "Questions-réponses",
+            "Bilan de la journée"
+        ]
+    },
+    {
+        title:"Stage exploration 2 jours",
+        objectifs: "Objectifs",
+        objectifsPara: "Vous familiariser avec l'escrime en tant qu'outil de résonance des comportements. Vous permettre de résoudre, le cas échéant, ce qui a été laissé de côté dans votre propre parcours thérapeutique et que vous souhaitez voir évoluer.",
+        pourQui: "Pour qui ?",
+        pourQuiTab: [
+            "Thérapeutes, médecins, personnel médical, coachs...",
+            "Toute personne intéressée par l'escrime en tant qu'outil de transfert thérapeutique et/ou professionnel.",
+            "Toute personne accompagnant des victimes de violences (verbales, physiques, sexuelles)."
+        ],
+        speech:"Durant ces deux jours, le pont est constamment fait entre l'escrime et les sujet traités (limites, confiance, protection, leadership, coopération...) et chaque stagiaire se voit proposer un espace d'expression où il peut naviguer de façon libre entre posture d'expérimentateur et posture réflexive.",
+        programme: "Programme",
+        programmes: [
+            "Echauffement, maniement du sabre",
+            "Premiers challenges en individuel",
+            "Exercices psycho-corporels",
+            "Escrime en équipes et challenges.",
+            "Exercices psycho-corporels",
+            "Questions-réponses",
+            "Bilan de la journée"
+        ]
     }
 ]
 
@@ -105,6 +162,9 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                         })
                     }
 
+                </div>
+
+                <div className={styles.ProfessionnelsProgramme_Cards}>
                 </div>
 
                 
