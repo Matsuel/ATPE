@@ -4,6 +4,7 @@ import styles from './style.module.scss';
 import { faUserSlash, faUserNinja, faChildReaching } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FFE from '@/assets/ffe.png';
+import Footer from '../Footer';
 
 interface HomeProps {
 
@@ -107,6 +108,8 @@ const Home = ({ }: HomeProps) => {
                     Nous contacter
                 </a>
             </div>
+
+            <Footer />
         </div>
     );
 };

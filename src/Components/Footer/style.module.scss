@@ -1,0 +1,128 @@
+.Footer_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 25px;
+
+    .Footer_Links{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .Footer_Link {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.1);
+            
+
+            .Footer_Icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .Footer_Link:nth-child(1) {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .Footer_Link:nth-child(3) {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .Footer_Link:hover {
+            background-color: rgba(0,0,0,0.2);
+        }
+    }
+
+    .Footer_Contacts {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        .Footer_Contacts_Title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .FooterSeparator {
+            width: 15%;
+            height: 10px;
+            border-radius: 25px;
+            background: linear-gradient(to right, #85e1eb, #bfe1d1, #e7e2c2);
+            align-self: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .Footer_Contacts_Email {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            .Footer_ContactEmail {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #000;
+                margin-bottom: 25px;
+            }
+        }
+
+        .Footer_Contacts_Persons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+
+            .Footer_Contacts_Person {
+                width: 20%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+
+                .Footer_ContactName {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #000;
+
+                }
+
+                .Footer_ContactPhone {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #000;
+                } 
+
+                .Footer_ContactIcon {
+                    width: 20px;
+                    height: 20px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
