@@ -1,0 +1,48 @@
+.ML_container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ML_Top {
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 20px;
+        background-image: url('../assets/bibliotheque.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ML_Title {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 6rem;
+            text-align: center;
+        }
+    }
+
+    .ML_Content {
+        z-index: 1;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        background-color: #fff;
+        margin-bottom: 20px;
+
+        .ML_Paragraph {
+            z-index: 5;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+}
