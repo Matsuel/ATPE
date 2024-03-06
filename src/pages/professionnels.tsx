@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '@/styles/Professionnels.module.scss';
 import NavBar from '@/Components/Navbar';
 import Image2 from '@/assets/equipement.jpg';
+import Check from '@/assets/check.svg';
 import Image from 'next/image';
 import Footer from '@/Components/Footer';
 
@@ -171,22 +172,25 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                             return (
                                 <div key={index} className={styles.ProfessionnelsProgramme_Card}>
                                     <h3 className={styles.ProfessionnelsProgramme_CardTitle}>{item.title}</h3>
-                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.objectifs}</p>
+                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>{item.objectifs}</p>
                                     <p className={styles.ProfessionnelsProgramme_Text}>{item.objectifsPara}</p>
-                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.pourQui}</p>
+                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>{item.pourQui}</p>
                                     {
                                         item.pourQuiTab.map((item: string, index: number) => {
                                             return (
-                                                <p key={index} className={styles.ProfessionnelsProgramme_Text}>{item}</p>
+                                                <p key={index} className={styles.ProfessionnelsProgramme_TextPourQui}>- {item}</p>
                                             )
                                         })
                                     }
                                     <p className={styles.ProfessionnelsProgramme_Text}>{item.speech}</p>
-                                    <p className={styles.ProfessionnelsProgramme_Text}>{item.programme}</p>
+                                    <p className={styles.ProfessionnelsProgramme_TextTitle}>{item.programme}</p>
                                     {
                                         item.programmes.map((item: string, index: number) => {
                                             return (
-                                                <p key={index} className={styles.ProfessionnelsProgramme_Text}>{item}</p>
+                                                <p key={index} className={styles.ProfessionnelsProgramme_TextProg}>
+                                                    <Image src={Check} alt="check" />
+                                                    {item}
+                                                </p>
                                             )
                                         })
                                     }
