@@ -1,6 +1,246 @@
-.mainContainer {
-    background-color: white;
+.Home_container {
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;
+
+    .Home1 {
+        width: 100%;
+        height: 100vh;
+        opacity: 0.9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../assets/imgEscrime1.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.8);
+            z-index: -1;
+        }
+
+        .Home1_title {
+            width: 70%;
+            text-align: center;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 6rem;
+        }
+    }
+
+    .Home2 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .HomeSeparator {
+            width: 15%;
+            height: 10px;
+            border-radius: 25px;
+            background: linear-gradient(to right, #85e1eb, #bfe1d1, #e7e2c2);
+        }
+
+        .Home2_title {
+            max-width: 80%;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .Home2_subtitle {
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        .Home2_Icons {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .Home2_Info {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .Home2_Icon {
+                    color: #000;
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 20px;
+                }
+
+                .Home2_InfoTitle {
+                    color: #000;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    margin-bottom: 15px;
+                }
+
+                .Home2_InfoText {
+                    color: #000;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .Home3 {
+        position: relative;
+        width: 100%;
+        height: 93vh;
+        opacity: 0.9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        gap: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../assets/imgEscrime2.png');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.8);
+            z-index: -1;
+        }
+
+        .Home3_title {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .Home3_text {
+            max-width: 60%;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .Home3_signature {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .Home4 {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+
+        .Home4_title {
+            width: 40%;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .Home4_signature{
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    .Home5 {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../assets/trees.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.5);
+            z-index: -1;
+        }
+        
+        .Home5_title {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .Home5_button {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to right, #85e1eb, #bfe1d1, #e7e2c2);
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: linear-gradient(to right, #bfe1d1, #85e1eb, #e7e2c2);
+            }
+        }
+
+        
+    }
 }
