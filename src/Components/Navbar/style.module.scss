@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.NavBar_container {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to right, #85e1eb, #bfe1d1, #e7e2c2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .NavBar_Content {
+        width: 65%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .Navbar_tab {
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}
