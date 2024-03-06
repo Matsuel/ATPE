@@ -3,6 +3,7 @@ import styles from '@/styles/Professionnels.module.scss';
 import NavBar from '@/Components/Navbar';
 import Image2 from '@/assets/equipement.jpg';
 import Image from 'next/image';
+import Footer from '@/Components/Footer';
 
 interface ProfessionnelsProps {
 
@@ -85,7 +86,7 @@ const Programmes: ProfessionnelProgramme[] = [
             "Toute personne intéressée par l'escrime en tant qu'outil de transfert thérapeutique et/ou professionnel.",
             "Toute personne accompagnant des victimes de violences (verbales, physiques, sexuelles)."
         ],
-        speech: "Durant ces deux jours, le pont est constamment fait entre l'escrime et les sujet traités (limites, confiance, protection, leadership, coopération...) et chaque stagiaire se voit proposer un espace d'expression où il peut naviguer de façon libre entre posture d'expérimentateur et posture réflexive.",
+        speech: "Durant ces deux jours, le pont est constamment ratio fait entre l'escrime et les sujet traités (limites, confiance, protection, leadership, coopération...) et chaque stagiaire se voit proposer un espace d'expression où il peut naviguer de façon libre entre posture d'expérimentateur et posture réflexive.",
         programme: "Programme",
         programmes: [
             "Echauffement, maniement du sabre",
