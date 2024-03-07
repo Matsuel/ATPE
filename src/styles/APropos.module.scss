@@ -1,0 +1,53 @@
+.APropos_container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .APropos_Image {
+        width: 100%;
+        height: 70vh;
+        background-image: url('../assets/imgEscrime4.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .AProposTitle {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 6rem;
+        }
+    }
+}
+
+.Members {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+    .Membre {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        color: #000;    
+
+        .MembreImage {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

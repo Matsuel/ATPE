@@ -32,7 +32,7 @@ const NavBar = ({ }: NavBarProps) => {
         },
         {
             name: "A propos",
-            link: "/a-propos"
+            link: "/apropos"
         },
     ]
 
