@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FFE from "@/assets/ffe.png";
 import Footer from "@/Components/Footer";
 import TabName from "@/Components/TabName/TabName";
+import Infos from "@/Components/Infos/Infos";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -39,40 +40,11 @@ export default function App() {
                     </h2>
 
                     <div className={styles.Home2_Icons}>
-                        <div className={styles.Home2_Info}>
-                            <FontAwesomeIcon icon={faUserSlash} className={styles.Home2_Icon} />
-                            <h3 className={styles.Home2_InfoTitle}>
-                                VIOLENCES SEXUELLES
-                            </h3>
-                            <p className={styles.Home2_InfoText}>
-                                Depuis 12 ans,
-                                ATPE met son savoir-faire au service des femmes, des hommes et des enfants, victimes de violences sexuelles.
-                            </p>
+                        <Infos icon={faUserSlash} title="VIOLENCES SEXUELLES" text={["Depuis 12 ans, ATPE met son savoir-faire au service des femmes, des hommes et des enfants, victimes de violences sexuelles."]} />
 
-                        </div>
+                        <Infos icon={faUserNinja} title="VIOLENCES & HARCELEMENT" text={["En individuel ou en groupe, ATPE vous aide à sortir du cercle de la violence en initiant pas à pas une façon d'être plus écologique pour chacun et chacune."]} />
 
-                        <div className={styles.Home2_Info}>
-                            <FontAwesomeIcon icon={faUserNinja} className={styles.Home2_Icon} />
-                            <h3 className={styles.Home2_InfoTitle}>
-                                VIOLENCES  & HARCELEMENT
-
-                            </h3>
-                            <p className={styles.Home2_InfoText}>
-                                En individuel ou en groupe, ATPE vous aide à sortir du cercle de la violence en initiant pas à pas une façon d'être plus écologique pour chacun et chacune.
-                            </p>
-                        </div>
-
-                        <div className={styles.Home2_Info}>
-                            <FontAwesomeIcon icon={faChildReaching} className={styles.Home2_Icon} />
-                            <h3 className={styles.Home2_InfoTitle}>
-                                HARCELEMENT SCOLAIRE
-                            </h3>
-                            <p className={styles.Home2_InfoText}>
-                                Le harcèlement ne devrait plus
-                                exister !
-                                ATPE s'emploie durant toute l'année scolaire à aider les enfants et adolescents victimes de ces pratiques.
-                            </p>
-                        </div>
+                        <Infos icon={faChildReaching} title="HARCELEMENT SCOLAIRE" text={["Le harcèlement ne devrait plus exister ! ATPE s'emploie durant toute l'année scolaire à aider les enfants et adolescents victimes de ces pratiques."]} />
                     </div>
                 </div>
 
