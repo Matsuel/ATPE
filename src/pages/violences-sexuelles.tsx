@@ -8,6 +8,8 @@ import TabName from '@/Components/TabName/TabName';
 import Infos, { InfosProps } from '@/Components/Infos/Infos';
 import { faArrowsUpDownLeftRight, faFaceSmile, faHandsHolding, faSquareCheck, faTableCells, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import Subtitle from '@/Components/Subtitle/Subtitle';
+import Trees from '@/assets/trees.jpg';
+import Image from 'next/image';
 
 interface ViolencesProps {
 
@@ -80,8 +82,21 @@ const Violences = ({ }: ViolencesProps) => {
                         )
                     })
                 }
-            
-            </div>          
+
+            </div>
+
+            <div className={styles.ViolencesTrees}>
+
+                <div className={styles.ViolencesTreesTexts}>
+                    <h3 className={styles.ViolencesTreesTitle}>
+                        Reprendre confiance
+                    </h3>
+                    <p className={styles.ViolencesTreesText}>
+                        Les objectifs avérés des modules de reconstruction thérapeutique par l'escrime sont de retrouver votre confiance, votre énergie de vie
+                        et de reprendre en main votre destin.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };
