@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '@/styles/ML.module.scss';
 import NavBar from '@/Components/Navbar';
 import Footer from '@/Components/Footer';
-import TabName from '@/Components/TabName/TabName';
+import TabName from '@/Components/TabName';
 
 interface MLProps {
 

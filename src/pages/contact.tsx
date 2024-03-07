@@ -4,9 +4,9 @@ import styles from '@/styles/Contact.module.scss';
 import Image from 'next/image';
 import Mail from '@/assets/mail.svg';
 import Footer from '@/Components/Footer';
-import ContactForm from '@/Components/ContactForm/ContactForm';
-import TabName from '@/Components/TabName/TabName';
-import TopPic from '@/Components/TopPic/TopPic';
+import ContactForm from '@/Components/ContactForm';
+import TabName from '@/Components/TabName';
+import TopPic from '@/Components/TopPic';
 import ImgEscrime3 from '@/assets/imgEscrime3.png';
 import Subtitle from '@/Components/Subtitle/Subtitle';
 

@@ -13,10 +13,10 @@ const ContactForm = ({ }: ContactFormProps) => {
         <div className={styles.ContactForm}>
             <div className={styles.ContactFormInfo}>
                 <p className={styles.ContactText}>
-                    Remplissez le formulaire afin d'être contacté.
+                    Remplissez le formulaire afin d&apos;être contacté.
                 </p>
                 <p className={styles.ContactText}>
-                    Ou bien envoyez nous directement un mail en cliquant sur l'icone ci-dessous.
+                    Ou bien envoyez nous directement un mail en cliquant sur l&apos;icone ci-dessous.
                 </p>
                 <a href="mailto:atpe75@gmail.com" className={styles.ContactMail}>
                     <Image src={Mail} alt="Mail" width={35} height={35} />

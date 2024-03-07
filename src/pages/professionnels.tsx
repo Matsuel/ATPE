@@ -9,8 +9,8 @@ import Image from 'next/image';
 import Head from 'next/head';
 import User from '@/assets/user.svg';
 import Footer from '@/Components/Footer';
-import TabName from '@/Components/TabName/TabName';
-import TopPic from '@/Components/TopPic/TopPic';
+import TabName from '@/Components/TabName';
+import TopPic from '@/Components/TopPic';
 import Personne from '@/assets/personne.jpg';
 import Subtitle from '@/Components/Subtitle/Subtitle';
 
@@ -138,7 +138,7 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
             <div className={styles.Professionnels3}>
                 <div className={styles.Professionnels3_ContentLeft}>
                     <h2 className={styles.Professionnels3_Title}>
-                        Découvrez les modules de reconstruction par l'escrime
+                        Découvrez les modules de reconstruction par l&apos;escrime
                         & Faites partie du réseau.
                     </h2>
 

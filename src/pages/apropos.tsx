@@ -4,10 +4,11 @@ import styles from '@/styles/APropos.module.scss';
 import NavBar from '@/Components/Navbar';
 import Membres from '@/datas/members';
 import Footer from '@/Components/Footer';
-import TabName from '@/Components/TabName/TabName';
-import TopPic from '@/Components/TopPic/TopPic';
+import TabName from '@/Components/TabName';
+import TopPic from '@/Components/TopPic';
 import ImgEscrime4 from '@/assets/imgEscrime4.jpg';
 import Subtitle from '@/Components/Subtitle/Subtitle';
+import Link from 'next/link';
 
 interface AProposProps {
 
@@ -51,16 +52,16 @@ const APropos = ({ }: AProposProps) => {
 
             <div className={styles.AProposReseau}>
                 <h2 className={styles.AProposSubTitle}>Notre réseau</h2>
-                <p className={styles.AProposText}>Notre équipe s'appuie sur un médecin référent, un médecin du sport spécialisé en traumatologie, des psychologues du travail, des psychologues cliniciens, des thérapeutes psychocorporels ainsi qu'un psychiatre.</p>
+                <p className={styles.AProposText}>Notre équipe s&apos;appuie sur un médecin référent, un médecin du sport spécialisé en traumatologie, des psychologues du travail, des psychologues cliniciens, des thérapeutes psychocorporels ainsi qu&apos;un psychiatre.</p>
 
                 <div className={styles.AProposReseauImages}>
                     <Image src={require('@/assets/imgEscrime6.jpg')} alt="Escrime" className={styles.AProposReseauImage} />
                     <Image src={require('@/assets/imgEscrime5.jpg')} alt="Escrime" className={styles.AProposReseauImage} />
                 </div>
 
-                <a className={styles.AProposReseauButton} href="/contact">
+                <Link href="/contact" passHref className={styles.AProposReseauButton}>
                     Rejoindre notre réseau
-                </a>
+                </Link>
             </div>
 
             <Footer />

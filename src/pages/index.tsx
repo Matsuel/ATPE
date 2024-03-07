@@ -5,9 +5,10 @@ import styles from "@/styles/Home.module.scss";
 import { faUserSlash, faUserNinja, faChildReaching } from "@fortawesome/free-solid-svg-icons";
 import FFE from "@/assets/ffe.png";
 import Footer from "@/Components/Footer";
-import TabName from "@/Components/TabName/TabName";
-import Infos, { InfosProps } from "@/Components/Infos/Infos";
+import TabName from "@/Components/TabName";
+import Infos, { InfosProps } from "@/Components/Infos";
 import Subtitle from "@/Components/Subtitle/Subtitle";
+import Link from "next/link";
 
 const InfosViolences: InfosProps[] = [
     {
@@ -35,13 +36,13 @@ export default function App() {
             <div className={styles.Home_container}>
                 <div className={styles.Home1}>
                     <h1 className={styles.Home1_title}>
-                        Active ton potentiel par la pratique de l'escrime
+                        Active ton potentiel par la pratique de l&apos;escrime
                     </h1>
                 </div>
 
                 <div className={styles.Home2}>
                     <h2 className={styles.Home2_title}>
-                        L'escrime, au service d'un monde meilleur
+                        L&apos;escrime, au service d&apos;un monde meilleur
                     </h2>
 
                     <div className={styles.HomeSeparator}></div>
@@ -65,17 +66,17 @@ export default function App() {
 
                 <div className={styles.Home3}>
                     <h2 className={styles.Home3_title}>
-                        S'épanouir avec l'escrime...
+                        S&apos;épanouir avec l'escrime...
                     </h2>
 
                     <p className={styles.Home3_text}>
-                        Porteuse de valeurs fondamentales, l’escrime est un moyen d'éducation exceptionnel, un facteur d'épanouissement de la personne, d'intégration sociale et de promotion.
+                        Porteuse de valeurs fondamentales, l&apos;escrime est un moyen d&apos;éducation exceptionnel, un facteur d&apos;épanouissement de la personne, d&apos;intégration sociale et de promotion.
                         La lutte contre les discriminations et la parité y sont promues.
-                        Des valeurs morales personnelles comme la loyauté, le courage, la combativité, le dépassement de soi, la rigueur, l'autonomie et des valeurs citoyennes comme le respect, la solidarité, la tolérance, l'esprit d'équipe, le plaisir, font de l’escrime une véritable école de vie
+                        Des valeurs morales personnelles comme la loyauté, le courage, la combativité, le dépassement de soi, la rigueur, l&apos;autonomie et des valeurs citoyennes comme le respect, la solidarité, la tolérance, l&apos;esprit d'équipe, le plaisir, font de l&apos;escrime une véritable école de vie
                     </p>
 
                     <p className={styles.Home3_signature}>
-                        Féderation Française d'Escrime
+                        Féderation Française d&apos;Escrime
                     </p>
 
                     <Image src={FFE} alt="logo" width={200} />
@@ -84,8 +85,8 @@ export default function App() {
 
                 <div className={styles.Home4}>
                     <h2 className={styles.Home4_title}>
-                        "Que l'on s'efforce d'être pleinement humain
-                        et il n'y aura plus de place pour le mal."
+                        "Que l&apos;on s&apos;efforce d&apos;être pleinement humain
+                        et il n&apos;y aura plus de place pour le mal."
                     </h2>
                     <p className={styles.Home4_signature}>
                         - Confucius
@@ -96,9 +97,9 @@ export default function App() {
                     <h2 className={styles.Home5_title}>
                         Rencontrons-nous
                     </h2>
-                    <a className={styles.Home5_button} href="/contact">
+                    <Link href="/apropos" passHref className={styles.Home5_link}>
                         Nous contacter
-                    </a>
+                    </Link>
                 </div>
 
                 <Footer />

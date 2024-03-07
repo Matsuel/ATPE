@@ -3,15 +3,16 @@ import React from 'react';
 import styles from '@/styles/Violences.module.scss';
 import NavBar from '@/Components/Navbar';
 import ImgEscrime7 from '@/assets/imgEscrime7.jpg';
-import TopPic from '@/Components/TopPic/TopPic';
-import TabName from '@/Components/TabName/TabName';
-import Infos, { InfosProps } from '@/Components/Infos/Infos';
+import TopPic from '@/Components/TopPic';
+import TabName from '@/Components/TabName';
+import Infos, { InfosProps } from '@/Components/Infos';
 import { faArrowsUpDownLeftRight, faFaceSmile, faHandsHolding, faSquareCheck, faTableCells, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import ImgEscrime8 from '@/assets/imgEscrime8.jpg';
 import Check from '@/assets/check.svg';
 import Subtitle from '@/Components/Subtitle/Subtitle';
 import Footer from '@/Components/Footer';
+import Link from 'next/link';
 
 interface ViolencesProps {
 
@@ -114,7 +115,7 @@ const Violences = ({ }: ViolencesProps) => {
 
             <div className={styles.ViolencesPositives}>
                 <h2 className={styles.ViolencesPositivesTitle}>
-                LA FORCE DE L'ESCRIME
+                LA FORCE DE L&apos;ESCRIME
                 </h2>
                 {
                     Positives.map((positive: string, index: number) => {
@@ -149,13 +150,12 @@ const Violences = ({ }: ViolencesProps) => {
                         Reprendre confiance
                     </h3>
                     <p className={styles.ViolencesTreesText}>
-                        Les objectifs avérés des modules de reconstruction thérapeutique par l'escrime sont de retrouver votre confiance, votre énergie de vie
+                        Les objectifs avérés des modules de reconstruction thérapeutique par l&apos;escrime sont de retrouver votre confiance, votre énergie de vie
                         et de reprendre en main votre destin.
                     </p>
-
-                    <a href="/contact" className={styles.ViolencesTreesContact}>
-                        Je souhaite plus d'informations
-                    </a>
+                    <Link href="/contact" passHref className={styles.ViolencesTreesContact}>
+                        Je souhaite plus d&apos;informations
+                    </Link>
                 </div>
             </div>
 

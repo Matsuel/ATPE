@@ -118,8 +118,8 @@ const Footer = ({ }: FooterProps) => {
                 <div className={styles.FooterSeparator}></div>
 
                 <div className={styles.FooterLinks}>
-                    <a href="/mentionslegales" className={styles.FooterLink}>Mentions légales</a>
-                    <a href="/apropos" className={styles.FooterLink}>A propos de nous</a>
+                    <Link href="/mentionslegales" passHref className={styles.FooterLink}>Mentions légales</Link>
+                    <Link href="/apropos" passHref className={styles.FooterLink}>A propos de nous</Link>
                 </div>
 
 
