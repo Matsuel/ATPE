@@ -32,8 +32,8 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
 
     .Membre {
         width: 25%;
@@ -41,13 +41,33 @@
         display: flex;
         flex-direction: column;
         align-items: center;    
-        color: #000;    
+        color: #000; 
+        border-radius: 20px;
+        background-color: aqua;   
 
         .MembreImage {
+            padding-top: 20px;
+            padding-bottom: 20px;
             width: 150px;
             height: auto;
             object-fit: cover;
             object-position: center;
+        }
+
+        .MembreName {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .MembreRole {
+            width: 80%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            text-align: center;
         }
     }
 }
