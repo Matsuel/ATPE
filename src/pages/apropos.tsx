@@ -22,11 +22,7 @@ const APropos = ({ }: AProposProps) => {
                 <h2 className={styles.AProposTitle}>Qui sommes nous ?</h2>
             </div>
 
-            <div className={styles.AProposContent}>
-                <h2 className={styles.AProposSubTitle}>Une équipe pluridisciplinaire</h2>
-                <div className={styles.AProposMembres}>
-                </div>
-            </div>
+            <h2 className={styles.AProposSubTitle}>Une équipe pluridisciplinaire</h2>
 
             <div className={styles.Members}>
                 {
