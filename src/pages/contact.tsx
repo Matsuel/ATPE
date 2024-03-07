@@ -33,6 +33,9 @@ const Contact = ({ }: ContactProps) => {
                         <a href="mailto:atpe75@gmail.com" className={styles.ContactMail}>
                             <Image src={Mail} alt="Mail" width={35} height={35} />
                         </a>
+                        <p className={styles.ContactMail} onClick={() => { navigator.clipboard.writeText("atpe75@gmail.com")}}>
+                            atpe75@gmail.com
+                        </p>
                     </div>
                     <div className={styles.ContactFormNames}>
                         <input type="text" placeholder="Nom" className={styles.ContactFormInput} maxLength={50} />

@@ -89,7 +89,7 @@ const Footer = ({ }: FooterProps) => {
 
                 <div className={styles.Footer_Contacts_Email}>
                     <a href={`mailto:${email}`}><Image src={MailSvg} alt="mail" /></a>
-                    <p className={styles.Footer_ContactEmail}>{email}</p>
+                    <p className={styles.Footer_ContactEmail} onClick={() => { navigator.clipboard.writeText(email) }}>{email}</p>
                 </div>
 
                 <div className={styles.Footer_Contacts_Persons}>
