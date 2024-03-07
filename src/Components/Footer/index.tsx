@@ -19,7 +19,7 @@ interface Social {
 
 interface Person {
     name: string;
-    phone?: string;
+    phone: string;
 }
 
 const Footer = ({ }: FooterProps) => {
@@ -102,7 +102,9 @@ const Footer = ({ }: FooterProps) => {
                                     <a href={`tel:${item.phone}`}>
                                         <FontAwesomeIcon icon={faPhone} className={styles.Footer_ContactIcon} />
                                     </a>
-                                    <p className={styles.Footer_ContactPhone}>{item.phone}</p>
+                                    <p className={styles.Footer_ContactPhone} onClick={() => { navigator.clipboard.writeText(item.phone) }}>
+                                        {item.phone}
+                                    </p>
                                 </div>
                             )
                         })
