@@ -112,7 +112,12 @@ const Footer = ({ }: FooterProps) => {
 
                 </div>
 
+                <div className={styles.FooterSeparator}></div>
 
+                <div className={styles.FooterLinks}>
+                    <a href="/mentionslegales" className={styles.FooterLink}>Mentions légales</a>
+                    <a href="/apropos" className={styles.FooterLink}>A propos de nous</a>
+                </div>
 
 
             </div>
