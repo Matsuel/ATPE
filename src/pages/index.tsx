@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import NavBar from "@/Components/Navbar";
 import styles from "@/styles/Home.module.scss";
 import { faUserSlash, faUserNinja, faChildReaching } from "@fortawesome/free-solid-svg-icons";
