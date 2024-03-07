@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
 import MailSvg from '@/assets/mail.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface FooterProps {
 
@@ -73,9 +74,9 @@ const Footer = ({ }: FooterProps) => {
                 {
                     datas.map((item: Social, index: number) => {
                         return (
-                            <a key={index} href={item.link} className={styles.Footer_Link} style={{ color: item.color }}>
+                            <Link href={item.link} key={index} passHref>
                                 <FontAwesomeIcon icon={item.icon} className={styles.Footer_Icon} />
-                            </a>
+                            </Link>
                         )
                     })
                 }
@@ -88,7 +89,9 @@ const Footer = ({ }: FooterProps) => {
                 <div className={styles.FooterSeparator}></div>
 
                 <div className={styles.Footer_Contacts_Email}>
-                    <a href={`mailto:${email}`}><Image src={MailSvg} alt="mail" /></a>
+                    <Link href={`mailto:${email}`} passHref>
+                        <Image src={MailSvg} alt="mail" />
+                    </Link>
                     <p className={styles.Footer_ContactEmail} onClick={() => { navigator.clipboard.writeText(email) }}>{email}</p>
                 </div>
 
@@ -99,9 +102,9 @@ const Footer = ({ }: FooterProps) => {
                             return (
                                 <div key={index} className={styles.Footer_Contacts_Person}>
                                     <h3 className={styles.Footer_ContactName}>{item.name}</h3>
-                                    <a href={`tel:${item.phone}`}>
+                                    <Link href={`tel:${item.phone}`} passHref>
                                         <FontAwesomeIcon icon={faPhone} className={styles.Footer_ContactIcon} />
-                                    </a>
+                                    </Link>
                                     <p className={styles.Footer_ContactPhone} onClick={() => { navigator.clipboard.writeText(item.phone) }}>
                                         {item.phone}
                                     </p>
