@@ -12,6 +12,7 @@ import Footer from '@/Components/Footer';
 import TabName from '@/Components/TabName/TabName';
 import TopPic from '@/Components/TopPic/TopPic';
 import Personne from '@/assets/personne.jpg';
+import Subtitle from '@/Components/Subtitle/Subtitle';
 
 interface ProfessionnelsProps {
 
@@ -118,9 +119,8 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
             <TopPic image={Personne} text="Thérapeutes, accompagnez vos patient(e)s" />
 
             <div className={styles.Professionnels1}>
-                <h2 className={styles.Professionnels1_Title}>
-                    Pour une prise-en-charge optimale des personnes victimes de violences
-                </h2>
+
+                <Subtitle text="Pour une prise en charge optimale des personnes victimes de violences" />
 
                 <div className={styles.ProfessionnelsSeparator}></div>
 

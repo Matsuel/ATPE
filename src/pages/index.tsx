@@ -7,6 +7,7 @@ import FFE from "@/assets/ffe.png";
 import Footer from "@/Components/Footer";
 import TabName from "@/Components/TabName/TabName";
 import Infos, { InfosProps } from "@/Components/Infos/Infos";
+import Subtitle from "@/Components/Subtitle/Subtitle";
 
 const InfosViolences: InfosProps[] = [
     {
@@ -44,9 +45,8 @@ export default function App() {
                     </h2>
 
                     <div className={styles.HomeSeparator}></div>
-                    <h3 className={styles.Home2_subtitle}>
-                        Il n'est plus temps d'attendre quand des solutions existent !
-                    </h3>
+
+                    <Subtitle text="Il n'est plus temps d'attendre quand des solutions existent !" />
 
                     <h2 className={styles.Home2_title}>
                         ATPEscrime accompagne les personnes victimes de violences dans leur reconstruction.

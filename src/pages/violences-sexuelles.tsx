@@ -7,6 +7,7 @@ import TopPic from '@/Components/TopPic/TopPic';
 import TabName from '@/Components/TabName/TabName';
 import Infos, { InfosProps } from '@/Components/Infos/Infos';
 import { faArrowsUpDownLeftRight, faFaceSmile, faHandsHolding, faSquareCheck, faTableCells, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import Subtitle from '@/Components/Subtitle/Subtitle';
 
 interface ViolencesProps {
 
@@ -67,6 +68,8 @@ const Violences = ({ }: ViolencesProps) => {
             <TabName name="Violences sexuelles" />
 
             <TopPic image={ImgEscrime7} text="Violences sexuelles" />
+
+            <Subtitle text="UNE METHODOLOGIE" />
 
             <div className={styles.ViolencesMethodologies}>
 

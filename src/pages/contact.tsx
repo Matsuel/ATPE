@@ -8,6 +8,7 @@ import ContactForm from '@/Components/ContactForm/ContactForm';
 import TabName from '@/Components/TabName/TabName';
 import TopPic from '@/Components/TopPic/TopPic';
 import ImgEscrime3 from '@/assets/imgEscrime3.png';
+import Subtitle from '@/Components/Subtitle/Subtitle';
 
 interface ContactProps {
 
@@ -24,7 +25,7 @@ const Contact = ({ }: ContactProps) => {
 
 
             <div className={styles.ContactContent}>
-                <h2 className={styles.ContactSubTitle}>Contactez-nous</h2>
+                <Subtitle text="Contactez-nous" />
                 <ContactForm />
                 
             </div>

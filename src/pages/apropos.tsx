@@ -7,6 +7,7 @@ import Footer from '@/Components/Footer';
 import TabName from '@/Components/TabName/TabName';
 import TopPic from '@/Components/TopPic/TopPic';
 import ImgEscrime4 from '@/assets/imgEscrime4.jpg';
+import Subtitle from '@/Components/Subtitle/Subtitle';
 
 interface AProposProps {
 
@@ -26,7 +27,7 @@ const APropos = ({ }: AProposProps) => {
             
             <TopPic image={ImgEscrime4} text="Qui sommes nous ?" />
 
-            <h2 className={styles.AProposSubTitle}>Une équipe pluridisciplinaire</h2>
+            <Subtitle text="Une équipe pluridisciplinaire" />
 
             <div className={styles.Members}>
                 {
