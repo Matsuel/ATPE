@@ -1,17 +1,29 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import NavBar from "@/Components/Navbar";
-import style from "@/styles/Home.module.scss";
 import styles from "@/styles/Home.module.scss";
 import { faUserSlash, faUserNinja, faChildReaching } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FFE from "@/assets/ffe.png";
 import Footer from "@/Components/Footer";
 import TabName from "@/Components/TabName/TabName";
-import Infos from "@/Components/Infos/Infos";
+import Infos, { InfosProps } from "@/Components/Infos/Infos";
 
-
-const inter = Inter({ subsets: ["latin"] });
+const InfosViolences: InfosProps[] = [
+    {
+        icon: faUserSlash,
+        title: "VIOLENCES SEXUELLES",
+        text: ["Depuis 12 ans, ATPE met son savoir-faire au service des femmes, des hommes et des enfants, victimes de violences sexuelles."]
+    },
+    {
+        icon: faUserNinja,
+        title: "VIOLENCES & HARCELEMENT",
+        text: ["En individuel ou en groupe, ATPE vous aide à sortir du cercle de la violence en initiant pas à pas une façon d'être plus écologique pour chacun et chacune."]
+    },
+    {
+        icon: faChildReaching,
+        title: "HARCELEMENT SCOLAIRE",
+        text: ["Le harcèlement ne devrait plus exister ! ATPE s'emploie durant toute l'année scolaire à aider les enfants et adolescents victimes de ces pratiques."]
+    }
+];
 
 export default function App() {
     return (
@@ -40,11 +52,13 @@ export default function App() {
                     </h2>
 
                     <div className={styles.Home2_Icons}>
-                        <Infos icon={faUserSlash} title="VIOLENCES SEXUELLES" text={["Depuis 12 ans, ATPE met son savoir-faire au service des femmes, des hommes et des enfants, victimes de violences sexuelles."]} />
-
-                        <Infos icon={faUserNinja} title="VIOLENCES & HARCELEMENT" text={["En individuel ou en groupe, ATPE vous aide à sortir du cercle de la violence en initiant pas à pas une façon d'être plus écologique pour chacun et chacune."]} />
-
-                        <Infos icon={faChildReaching} title="HARCELEMENT SCOLAIRE" text={["Le harcèlement ne devrait plus exister ! ATPE s'emploie durant toute l'année scolaire à aider les enfants et adolescents victimes de ces pratiques."]} />
+                        {
+                            InfosViolences.map((info: InfosProps, index: number) => {
+                                return (
+                                    <Infos key={index} icon={info.icon} title={info.title} text={info.text} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
 

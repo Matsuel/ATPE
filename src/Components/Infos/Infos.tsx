@@ -4,7 +4,7 @@ import styles from './Infos.module.scss';
 import { faUserSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-interface InfosProps {
+export interface InfosProps {
     icon: any;
     title: string;
     text: string[];
@@ -30,4 +30,4 @@ const Infos = ({icon,text,title }: InfosProps) => {
     );
 };
 
-export default Infos;
+export default Infos
