@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Mail from '@/assets/mail.svg';
 import Footer from '@/Components/Footer';
 import ContactForm from '@/Components/ContactForm/ContactForm';
+import TabName from '@/Components/TabName/TabName';
 
 interface ContactProps {
 
@@ -13,6 +14,7 @@ interface ContactProps {
 const Contact = ({ }: ContactProps) => {
     return (
         <div className={styles.Contact_container}>
+            <TabName name="Contact" />
             <NavBar />
 
             <div className={styles.ContactImage}>

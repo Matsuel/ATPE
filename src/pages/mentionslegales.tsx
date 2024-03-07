@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '@/styles/ML.module.scss';
 import NavBar from '@/Components/Navbar';
 import Footer from '@/Components/Footer';
+import TabName from '@/Components/TabName/TabName';
 
 interface MLProps {
 
@@ -111,6 +112,7 @@ const mentions: Mention[] = [
 const ML = ({ }: MLProps) => {
     return (
         <div className={styles.ML_container}>
+            <TabName name="Mentions légales" />
             <NavBar />
 
             <div className={styles.ML_Top}>

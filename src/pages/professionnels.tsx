@@ -6,8 +6,10 @@ import Check from '@/assets/check.svg';
 import Cible from '@/assets/cible.svg';
 import Calendar from '@/assets/calendar.svg';
 import Image from 'next/image';
+import Head from 'next/head';
 import User from '@/assets/user.svg';
 import Footer from '@/Components/Footer';
+import TabName from '@/Components/TabName/TabName';
 
 interface ProfessionnelsProps {
 
@@ -107,6 +109,8 @@ const Programmes: ProfessionnelProgramme[] = [
 const Professionnels = ({ }: ProfessionnelsProps) => {
     return (
         <div className={styles.Professionnels_container}>
+            <TabName name="Professionnels" />
+
             <NavBar />
 
             <div className={styles.Professionnels_Top}>

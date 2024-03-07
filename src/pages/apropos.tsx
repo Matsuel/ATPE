@@ -4,6 +4,7 @@ import styles from '@/styles/APropos.module.scss';
 import NavBar from '@/Components/Navbar';
 import Membres from '@/datas/members';
 import Footer from '@/Components/Footer';
+import TabName from '@/Components/TabName/TabName';
 
 interface AProposProps {
 
@@ -18,6 +19,7 @@ interface MembreProps {
 const APropos = ({ }: AProposProps) => {
     return (
         <div className={styles.APropos_container}>
+            <TabName name="A propos" />
             <NavBar />
             <div className={styles.APropos_Image}>
                 <h2 className={styles.AProposTitle}>Qui sommes nous ?</h2>
