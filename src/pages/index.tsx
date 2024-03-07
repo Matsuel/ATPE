@@ -66,13 +66,13 @@ export default function App() {
 
                 <div className={styles.Home3}>
                     <h2 className={styles.Home3_title}>
-                        S&apos;épanouir avec l'escrime...
+                        S&apos;épanouir avec l&apos;escrime...
                     </h2>
 
                     <p className={styles.Home3_text}>
                         Porteuse de valeurs fondamentales, l&apos;escrime est un moyen d&apos;éducation exceptionnel, un facteur d&apos;épanouissement de la personne, d&apos;intégration sociale et de promotion.
                         La lutte contre les discriminations et la parité y sont promues.
-                        Des valeurs morales personnelles comme la loyauté, le courage, la combativité, le dépassement de soi, la rigueur, l&apos;autonomie et des valeurs citoyennes comme le respect, la solidarité, la tolérance, l&apos;esprit d'équipe, le plaisir, font de l&apos;escrime une véritable école de vie
+                        Des valeurs morales personnelles comme la loyauté, le courage, la combativité, le dépassement de soi, la rigueur, l&apos;autonomie et des valeurs citoyennes comme le respect, la solidarité, la tolérance, l&apos;esprit d&apos;équipe, le plaisir, font de l&apos;escrime une véritable école de vie
                     </p>
 
                     <p className={styles.Home3_signature}>
@@ -85,8 +85,8 @@ export default function App() {
 
                 <div className={styles.Home4}>
                     <h2 className={styles.Home4_title}>
-                        "Que l&apos;on s&apos;efforce d&apos;être pleinement humain
-                        et il n&apos;y aura plus de place pour le mal."
+                        &quot;Que l&apos;on s&apos;efforce d&apos;être pleinement humain
+                        et il n&apos;y aura plus de place pour le mal.&quot;
                     </h2>
                     <p className={styles.Home4_signature}>
                         - Confucius
