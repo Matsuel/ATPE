@@ -7,9 +7,10 @@ import TopPic from '@/Components/TopPic/TopPic';
 import TabName from '@/Components/TabName/TabName';
 import Infos, { InfosProps } from '@/Components/Infos/Infos';
 import { faArrowsUpDownLeftRight, faFaceSmile, faHandsHolding, faSquareCheck, faTableCells, faUserPlus } from '@fortawesome/free-solid-svg-icons';
-import Subtitle from '@/Components/Subtitle/Subtitle';
-import Trees from '@/assets/trees.jpg';
 import Image from 'next/image';
+import ImgEscrime8 from '@/assets/imgEscrime8.jpg';
+import Check from '@/assets/check.svg';
+import Subtitle from '@/Components/Subtitle/Subtitle';
 
 interface ViolencesProps {
 
@@ -62,6 +63,16 @@ const MethodoliesArray: InfosProps[] = [
     }
 ]
 
+const StepsViolences: string[] = [
+    "10 séances pour se réparer et retrouver l'énergie de vivre !",
+    "Groupes différenciés pour femmes et hommes.",
+    "10 à 14 participants.",
+    "4H d'atelier",
+    "Travail en individuel et en groupe."
+]
+
+
+
 const Violences = ({ }: ViolencesProps) => {
     return (
         <div className={styles.Violences_container}>
@@ -70,6 +81,29 @@ const Violences = ({ }: ViolencesProps) => {
             <TabName name="Violences sexuelles" />
 
             <TopPic image={ImgEscrime7} text="Violences sexuelles" />
+
+            <div className={styles.ViolencesStats}>
+                <div className={styles.ViolencesStatsTexts}>
+                    <p className={styles.ViolencesStatsSpeech}>
+                        1 personne sur 5 est victime de violences sexuelles.
+                    </p>
+                    <p className={styles.ViolencesStatsText}>
+                        Les modules de reconstruction thérapeutique ATPE,  créés en escrime par Olivier Serwar vous proposent une approche globale ayant fait ses preuves depuis 2012 :
+                    </p>
+
+                    {
+                        StepsViolences.map((step: string, index: number) => {
+                            return (
+                                <p key={index} className={styles.ViolencesStatsStep}>
+                                    <Image src={Check} alt="Check" className={styles.ViolencesStatsCheck} />
+                                    {step}
+                                </p>
+                            )
+                        })
+                    }
+                </div>
+                <Image src={ImgEscrime8} alt="Escrime" className={styles.ViolencesStatsImage} />
+            </div>
 
             <Subtitle text="UNE METHODOLOGIE" />
 
@@ -95,6 +129,10 @@ const Violences = ({ }: ViolencesProps) => {
                         Les objectifs avérés des modules de reconstruction thérapeutique par l'escrime sont de retrouver votre confiance, votre énergie de vie
                         et de reprendre en main votre destin.
                     </p>
+
+                    <a href="/contact" className={styles.ViolencesTreesContact}>
+                        Je souhaite plus d'informations
+                    </a>
                 </div>
             </div>
         </div>
