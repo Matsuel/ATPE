@@ -82,3 +82,61 @@
         }
     }
 }
+
+.AProposReseau {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .AProposText {
+        color: #000;
+        width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: start;
+        margin-bottom: 3%;
+    }
+
+    .AProposReseauImages {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3%;
+        background-color: #f9faff;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 20px;
+        gap: 3%;
+
+        .AProposReseauImage {
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+    }
+
+    .AProposReseauButton {
+        width: 60%;
+        height: 50px;
+        border: none;
+        border-radius: 12px;
+        background-color: #f9faff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #000;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
