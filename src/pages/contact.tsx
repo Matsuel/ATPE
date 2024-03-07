@@ -6,6 +6,8 @@ import Mail from '@/assets/mail.svg';
 import Footer from '@/Components/Footer';
 import ContactForm from '@/Components/ContactForm/ContactForm';
 import TabName from '@/Components/TabName/TabName';
+import TopPic from '@/Components/TopPic/TopPic';
+import ImgEscrime3 from '@/assets/imgEscrime3.png';
 
 interface ContactProps {
 
@@ -17,9 +19,7 @@ const Contact = ({ }: ContactProps) => {
             <TabName name="Contact" />
             <NavBar />
 
-            <div className={styles.ContactImage}>
-                <h1 className={styles.ContactTitle}>Rencontrons-nous</h1>
-            </div>
+            <TopPic image={ImgEscrime3} text="Rencontrons-nous" />
 
 
 

@@ -1,0 +1,16 @@
+.TopPic_container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .TopPicTitle {
+        width: 80%;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 6rem;
+        text-align: center;
+    }
+}

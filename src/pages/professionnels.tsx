@@ -10,6 +10,8 @@ import Head from 'next/head';
 import User from '@/assets/user.svg';
 import Footer from '@/Components/Footer';
 import TabName from '@/Components/TabName/TabName';
+import TopPic from '@/Components/TopPic/TopPic';
+import Personne from '@/assets/personne.jpg';
 
 interface ProfessionnelsProps {
 
@@ -113,12 +115,7 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
 
             <NavBar />
 
-            <div className={styles.Professionnels_Top}>
-                <h1 className={styles.Professionnels_Title}>
-                    Thérapeutes,<br />
-                    accompagnez vos patient(e)s
-                </h1>
-            </div>
+            <TopPic image={Personne} text="Thérapeutes, accompagnez vos patient(e)s" />
 
             <div className={styles.Professionnels1}>
                 <h2 className={styles.Professionnels1_Title}>

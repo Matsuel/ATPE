@@ -5,6 +5,8 @@ import NavBar from '@/Components/Navbar';
 import Membres from '@/datas/members';
 import Footer from '@/Components/Footer';
 import TabName from '@/Components/TabName/TabName';
+import TopPic from '@/Components/TopPic/TopPic';
+import ImgEscrime4 from '@/assets/imgEscrime4.jpg';
 
 interface AProposProps {
 
@@ -21,9 +23,8 @@ const APropos = ({ }: AProposProps) => {
         <div className={styles.APropos_container}>
             <TabName name="A propos" />
             <NavBar />
-            <div className={styles.APropos_Image}>
-                <h2 className={styles.AProposTitle}>Qui sommes nous ?</h2>
-            </div>
+            
+            <TopPic image={ImgEscrime4} text="Qui sommes nous ?" />
 
             <h2 className={styles.AProposSubTitle}>Une équipe pluridisciplinaire</h2>
 
