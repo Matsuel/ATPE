@@ -3,6 +3,7 @@ import NavBar from '@/Components/Navbar';
 import styles from '@/styles/Contact.module.scss';
 import Image from 'next/image';
 import Mail from '@/assets/mail.svg';
+import Footer from '@/Components/Footer';
 
 interface ContactProps {
 
@@ -34,15 +35,19 @@ const Contact = ({ }: ContactProps) => {
                         </a>
                     </div>
                     <div className={styles.ContactFormNames}>
-                        <input type="text" placeholder="Nom" className={styles.ContactFormInputName} maxLength={50} />
-                        <input type="text" placeholder="Prénom" className={styles.ContactFormInputName} maxLength={50} />
+                        <input type="text" placeholder="Nom" className={styles.ContactFormInput} maxLength={50} />
+                        <input type="text" placeholder="Prénom" className={styles.ContactFormInput} maxLength={50} />
                     </div>
-                    <input type="text" placeholder="Email" className={styles.ContactFormInput} maxLength={150} />
-                    <input type="number" placeholder="Téléphone" className={styles.ContactFormInput} maxLength={10} />
+                    <div className={styles.ContactFormNames}>
+                        <input type="email" placeholder="Email" className={styles.ContactFormInput} maxLength={150} />
+                        <input type="tel" placeholder="Téléphone" className={styles.ContactFormInput} />
+                    </div>
                     <textarea placeholder="Votre message" className={styles.ContactFormInputArea}></textarea>
-                    <button className={styles.ContactFormSendBtn}>Envoyer mes informations</button>
+                    <button className={styles.ContactFormSendBtn}>Transmettre mes informations</button>
                 </div>
             </div>
+
+            <Footer />
 
 
 
