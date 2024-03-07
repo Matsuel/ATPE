@@ -10,14 +10,7 @@ interface TopPicProps {
 
 const TopPic = ({ image, text }: TopPicProps) => {
     return (
-        <div className={styles.TopPic_container} style={
-            {
-                backgroundImage: `url(${image.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }
-        }>
+        <div className={styles.TopPic_container} style={{backgroundImage: `url(${image.src})`,}}>
             <h1 className={styles.TopPicTitle}>{text}</h1>
         </div>
     );
