@@ -11,6 +11,7 @@ import Image from 'next/image';
 import ImgEscrime8 from '@/assets/imgEscrime8.jpg';
 import Check from '@/assets/check.svg';
 import Subtitle from '@/Components/Subtitle/Subtitle';
+import Footer from '@/Components/Footer';
 
 interface ViolencesProps {
 
@@ -71,6 +72,12 @@ const StepsViolences: string[] = [
     "Travail en individuel et en groupe."
 ]
 
+const Positives = [
+    "Pour les victimes de violences sexuelles, au-delà de poser des mots sur les maux et de pouvoir porter plainte, il s'agit aussi de se reconstruire et de faire en sorte qu'il y ait un APRES.",
+    "Après la ou les aggressions, après le choc, après le déni, après l'abattement, après la colère, après le ressassement,  après la maladie,  la honte ou la culpabilité...     APRES.",
+    "Intégrer un parcours de reconstruction par l'escrime, c'est oser faire face à ce qui a été, c'est se ré approprier son corps et ses multiples sensations, c'est poser ses limites et retrouver sa dignité c'est pouvoir se détendre à nouveau et retrouver sa joie...",
+    "Dans l'escrime, on touche, on effleure, on attaque, on défend, il y a un adversaire et il y a des assauts... On peut aussi se mettre en garde, esquiver, devenir offensif ou encore ne plus prêter le flanc..."
+]
 
 
 const Violences = ({ }: ViolencesProps) => {
@@ -105,6 +112,22 @@ const Violences = ({ }: ViolencesProps) => {
                 <Image src={ImgEscrime8} alt="Escrime" className={styles.ViolencesStatsImage} />
             </div>
 
+            <div className={styles.ViolencesPositives}>
+                <h2 className={styles.ViolencesPositivesTitle}>
+                LA FORCE DE L'ESCRIME
+                </h2>
+                {
+                    Positives.map((positive: string, index: number) => {
+                        return (
+                            <p key={index} className={styles.ViolencesPositivesText}>
+                                {positive}
+                            </p>
+                        )
+                    })
+                }
+
+            </div>
+
             <Subtitle text="UNE METHODOLOGIE" />
 
             <div className={styles.ViolencesMethodologies}>
@@ -135,6 +158,8 @@ const Violences = ({ }: ViolencesProps) => {
                     </a>
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 };
