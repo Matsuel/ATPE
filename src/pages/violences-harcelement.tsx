@@ -135,7 +135,7 @@ const ViolenceHarcelement = ({ }: ViolenceHarcelementProps) => {
                                 <p className={styles.ViolenceHarcelement_Programme_footer}>{programme.footer}</p>
 
                                 <Link href="/contact" className={styles.ViolenceHarcelement_Programme_link}>
-                                    Demande d'informations
+                                    Demande d&apos;informations
                                 </Link>
 
                             </div>
