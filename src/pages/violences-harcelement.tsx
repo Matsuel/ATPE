@@ -10,6 +10,13 @@ import TabName from '@/Components/TabName';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import imgEscrime12 from '@/assets/imgEscrime12.png';
+import imgEscrime13 from '@/assets/imgEscrime13.png';
+import imgEscrime14 from '@/assets/imgEscrime14.jpg';
+import imgEscrime15 from '@/assets/imgEscrime15.jpg';
+import imgEscrime4 from '@/assets/imgEscrime4.jpg';
+import Footer from '@/Components/Footer';
+
 interface ViolenceHarcelementProps {
 
 }
@@ -28,10 +35,10 @@ const AntiViolence: string[] = [
 ];
 
 interface ViolenceHarcelementProgrammes {
-    title : string;
-    paras : string[];
-    steps : string[];
-    footer : string;
+    title: string;
+    paras: string[];
+    steps: string[];
+    footer: string;
 }
 
 const ViolenceHarcelementProgrammes: ViolenceHarcelementProgrammes[] = [
@@ -130,12 +137,24 @@ const ViolenceHarcelement = ({ }: ViolenceHarcelementProps) => {
                                 <Link href="/contact" className={styles.ViolenceHarcelement_Programme_link}>
                                     Demande d'informations
                                 </Link>
-                                    
+
                             </div>
                         );
                     })
-                }                
+                }
             </div>
+
+            <Subtitle text="Se sortir de la violence & retrouver la joie de vivre." />
+
+            <div className={styles.ViolenceHarcelement_Images}>
+                <Image src={imgEscrime12} alt="imgEscrime12" className={styles.ViolenceHarcelement_Image} />
+                <Image src={imgEscrime13} alt="imgEscrime13" className={styles.ViolenceHarcelement_Image} />
+                <Image src={imgEscrime14} alt="imgEscrime14" className={styles.ViolenceHarcelement_Image} />
+                <Image src={imgEscrime15} alt="imgEscrime15" className={styles.ViolenceHarcelement_Image} />
+                <Image src={imgEscrime4} alt="imgEscrime4" className={styles.ViolenceHarcelement_Image} />
+            </div>
+
+            <Footer />
         </div>
     );
 };
