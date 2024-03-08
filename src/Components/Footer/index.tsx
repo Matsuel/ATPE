@@ -15,7 +15,7 @@ interface Social {
     name: string;
     link: string;
     icon: IconDefinition;
-    color?: string;
+    color: string;
 }
 
 interface Person {
@@ -74,8 +74,8 @@ const Footer = ({ }: FooterProps) => {
                 {
                     datas.map((item: Social, index: number) => {
                         return (
-                            <Link href={item.link} key={index} passHref>
-                                <FontAwesomeIcon icon={item.icon} className={styles.Footer_Icon} />
+                            <Link href={item.link} key={index} passHref className={styles.Footer_Link}>
+                                <FontAwesomeIcon icon={item.icon} className={styles.Footer_Icon} style={{ color: item.color }} />
                             </Link>
                         )
                     })
