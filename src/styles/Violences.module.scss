@@ -38,7 +38,7 @@
                 font-size: 2rem;
                 margin-bottom: 20px;
             }
-    
+
             .ViolencesStatsText {
                 width: 80%;
                 font-family: 'Montserrat', sans-serif;
@@ -47,7 +47,7 @@
                 text-align: left;
                 margin-bottom: 20px;
             }
-    
+
             .ViolencesStatsStep {
                 width: 80%;
                 font-family: 'Montserrat', sans-serif;
@@ -111,8 +111,8 @@
             }
 
             .ViolencesTreesTitle {
-                width: 80%;
-                font-size: 4rem;
+                width: 90%;
+                font-size: 3rem;
                 font-weight: 700;
                 margin-bottom: 5%;
                 margin-top: 5%;
@@ -150,7 +150,7 @@
 
     .ViolencesPositives {
         width: 100%;
-        height: 70vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -188,6 +188,201 @@
             margin-bottom: 3%;
             z-index: 1;
         }
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Violences_container {
+        .ViolencesStats {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            .ViolencesStatsTexts {
+                width: 80%;
+
+                .ViolencesStatsSpeech {
+                    font-size: 1.5rem;
+                }
+
+                .ViolencesStatsText {
+                    font-size: 1rem;
+                }
+
+                .ViolencesStatsStep {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .ViolencesStatsImage {
+                width: 80%;
+            }
+        }
+
+        .ViolencesPositives {
+            .ViolencesPositivesTitle {
+                font-size: 3rem;
+            }
+
+            .ViolencesPositivesText {
+                font-size: 1rem;
+            }
+        }
+
+        .ViolencesTrees {
+            .ViolencesTreesTexts {
+                .ViolencesTreesTitle {
+                    width: 90%;
+                    font-size: 2rem;
+                }
+
+                .ViolencesTreesText {
+                    font-size: 1.2rem;
+                }
+
+                .ViolencesTreesContact {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .ViolencesMethodologies {
+            gap: 30px;
         
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Violences_container {
+        .ViolencesMethodologies {
+            width: 90%;
+            gap: 20px;
+        }
+
+        .ViolencesStats {
+            width: 90%;
+
+            .ViolencesStatsTexts {
+                .ViolencesStatsSpeech {
+                    font-size: 1.2rem;
+                }
+
+                .ViolencesStatsText {
+                    font-size: 1rem;
+                }
+
+                .ViolencesStatsStep {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .ViolencesStatsImage {
+                width: 90%;
+            }
+        }
+
+        .ViolencesTrees {
+
+            height: 80vh;
+
+            .ViolencesTreesTexts {
+                width: 80%;
+
+                &::before {
+                    width: 80%;
+                    height: 70%;
+                }
+
+                .ViolencesTreesTitle {
+                    font-size: 3rem;
+                }
+
+                .ViolencesTreesText {
+                    font-size: 1.2rem;
+                }
+
+                .ViolencesTreesContact {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .ViolencesPositives {
+            .ViolencesPositivesTitle {
+                font-size: 2rem;
+            }
+
+            .ViolencesPositivesText {
+                width: 80%;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Violences_container {
+        .ViolencesMethodologies {
+            width: 90%;
+            gap: 10px;
+        }
+
+        .ViolencesStats {
+            width: 90%;
+
+            .ViolencesStatsTexts {
+                .ViolencesStatsSpeech {
+                    font-size: 1rem;
+                }
+
+                .ViolencesStatsText {
+                    font-size: 0.8rem;
+                }
+
+                .ViolencesStatsStep {
+                    font-size: 0.6rem;
+                }
+            }
+
+            .ViolencesStatsImage {
+                width: 90%;
+            }
+        }
+
+        .ViolencesTrees {
+            .ViolencesTreesTexts {
+                width: 90%;
+
+                &::before {
+                    width: 90%;
+                    height: 50%;
+                }
+                .ViolencesTreesTitle {
+                    font-size: 1.5rem;
+                }
+
+                .ViolencesTreesText {
+                    font-size: 0.8rem;
+                }
+
+                .ViolencesTreesContact {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .ViolencesPositives {
+
+            .ViolencesPositivesTitle {
+                font-size: 1.5rem;
+            }
+
+            .ViolencesPositivesText {
+                width: 90%;
+                font-size: 0.8rem;
+            }
+        }
     }
 }
