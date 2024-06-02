@@ -32,14 +32,6 @@ const Membres : MembreProps[] = [
         ]
     },
     {
-        picture: require('@/assets/esther-barale.png'),
-        name: "Esther Barale",
-        roles: [
-            "Thérapeute psychocorporelle Coach RNCP",
-            "Maître-praticienne en PNL. Praticienne en Systémique & Hypnose Ericksonnienne. Instructrice de méditation. IMA"
-        ]
-    },
-    {
         picture: require('@/assets/martin.jpg'),
         name: "Martin Vanderkam",
         roles: [
