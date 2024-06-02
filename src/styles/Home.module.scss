@@ -206,3 +206,107 @@
         
     }
 }
+
+@media screen and (max-width: 1024px){
+    .Home_container {
+        .Home1 {
+            .Home1_title {
+                font-size: 4rem;
+            }
+        }
+
+        .Home2 {
+            .Home2_title {
+                font-size: 3rem;
+            }
+        }
+
+        .Home3 {
+            .Home3_title {
+                font-size: 3rem;
+            }
+
+            .Home3_text {
+                font-size: 1.2rem;
+            }
+
+            .Home3_signature {
+                font-size: 1.2rem;
+            }
+        }
+
+        .Home4 {
+            .Home4_title {
+                font-size: 1.5rem;
+            }
+
+            .Home4_signature {
+                font-size: 1.2rem;
+            }
+        }
+
+        .Home5 {
+            .Home5_title {
+                font-size: 3rem;
+            }
+
+            .Home5_link {
+                font-size: 1.2rem;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .Home_container {
+        .Home1 {
+            .Home1_title {
+                font-size: 3rem;
+            }
+        }
+
+        .Home2 {
+            .Home2_Icons {
+                flex-direction: column;
+            }
+            
+            .Home2_title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .Home3 {
+            .Home3_title {
+                font-size: 2.5rem;
+            }
+
+            .Home3_text {
+                font-size: 1rem;
+            }
+
+            .Home3_signature {
+                font-size: 1rem;
+            }
+        }
+
+        .Home4 {
+            .Home4_title {
+                font-size: 1.2rem;
+            }
+
+            .Home4_signature {
+                font-size: 1rem;
+            }
+        }
+
+        .Home5 {
+            .Home5_title {
+                font-size: 2.5rem;
+            }
+
+            .Home5_link {
+                font-size: 1rem;
+            }
+        }
+    }    
+}

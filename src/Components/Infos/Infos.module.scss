@@ -32,3 +32,18 @@
         margin-bottom: 30px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Infos {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .Infos {
+        width: 100%;
+    }
+
+}

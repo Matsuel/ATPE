@@ -10,7 +10,11 @@ export interface InfosProps {
     text: string[];
 }
 
-const Infos = ({icon,text,title }: InfosProps) => {
+const Infos = ({
+    icon,
+    text,
+    title
+}: InfosProps) => {
     return (
         <div className={styles.Infos}>
             <FontAwesomeIcon icon={icon} className={styles.InfosIcon} />
