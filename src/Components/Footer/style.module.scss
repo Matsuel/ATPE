@@ -7,7 +7,7 @@
     background-color: #fff;
     padding-bottom: 25px;
 
-    .Footer_Links{
+    .Footer_Links {
         margin-top: 20px;
         margin-bottom: 20px;
         width: auto;
@@ -22,7 +22,7 @@
             justify-content: center;
             align-items: center;
             background-color: #f9faff;
-            
+
 
             .Footer_Icon {
                 width: 40px;
@@ -41,7 +41,7 @@
         }
 
         .Footer_Link:hover {
-            background-color: rgba(0,0,0,0.2);
+            background-color: rgba(0, 0, 0, 0.2);
         }
     }
 
@@ -98,10 +98,11 @@
             gap: 25px;
 
             .Footer_Contacts_Person {
-                width: 20%;
+                width: auto;
                 height: auto;
                 display: flex;
-                justify-content: space-between;
+                flex-direction: row;
+                gap: 20px;
 
                 .Footer_ContactName {
                     font-family: 'Montserrat', sans-serif;
@@ -117,7 +118,7 @@
                     font-weight: 500;
                     color: #000;
                     cursor: pointer;
-                } 
+                }
 
                 .Footer_ContactIcon {
                     width: 20px;
@@ -146,6 +147,76 @@
 
         .FooterLink:hover {
             color: #85e1eb;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Footer_container {
+        .Footer_Contacts {
+            .FooterSeparator {
+                width: 30%;
+            }
+
+            .FooterLinks {
+                width: 30%;
+
+                .FooterLink {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer_container {
+        .Footer_Contacts {
+            .FooterSeparator {
+                width: 35%;
+            }
+
+            .FooterLinks {
+                width: 40%;
+
+                .FooterLink {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Footer_container {
+        .Footer_Contacts {
+            .FooterSeparator {
+                width: 40%;
+            }
+
+            .Footer_Contacts_Persons {
+                gap: 35px;
+
+                .Footer_Contacts_Person {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            .FooterLinks {
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+
+                .FooterLink {
+                    font-size: 14px;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

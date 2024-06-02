@@ -2,7 +2,7 @@ import React from 'react';
 import { faTwitter, faFacebook, faLinkedin, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import MailSvg from '@/assets/mail.svg';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -23,7 +23,7 @@ interface Person {
     phone: string;
 }
 
-const Footer = ({ }: FooterProps) => {
+const Footer = () => {
 
     const datas: Social[] = [
         {
