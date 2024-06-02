@@ -133,8 +133,6 @@ const Professionnels = ({ }: ProfessionnelsProps) => {
                 }
             </div>
 
-            {/* Voir s'il ya besoin de faire le composant avec l'image escrime */}
-
             <div className={styles.Professionnels3}>
                 <div className={styles.Professionnels3_ContentLeft}>
                     <h2 className={styles.Professionnels3_Title}>

@@ -6,7 +6,7 @@
 
     .Professionnels1 {
         width: 100%;
-        height: 40vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -51,7 +51,7 @@
                 color: #000;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
-                font-size: 2.4rem;
+                font-size: 2rem;
                 text-align: start;
             }
 
@@ -190,6 +190,150 @@
             font-weight: 700;
             font-size: 3rem;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Professionnels_container {
+        .Professionnels3 {
+            .Professionnels3_ContentLeft {
+                .Professionnels3_Title {
+                    font-size: 1.5rem;
+                }
+
+                .Professionnels3_Text {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .Professionnels_container {
+        .Professionnels1 {
+            .Professionnels1_Text {
+                font-size: 1.2rem;
+            }
+
+            .ProfessionnelsSeparator {
+                width: 30%;
+            }
+        }
+
+        .Professionnels3 {
+            flex-direction: column;
+            margin-top: 10%;
+
+            .Professionnels3_ContentLeft {
+                width: 80%;
+
+                .Professionnels3_Title {
+                    font-size: 2rem;
+                }
+
+                .Professionnels3_Text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .ProfessionnelsProgramme {
+            .ProfessionnelsProgramme_Cards {
+                width: 80%;
+                flex-direction: column;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+
+            .ProfessionnelsProgramme_Ensemble {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Professionnels_container {
+        .Professionnels1 {
+            .Professionnels1_Text {
+                font-size: 1rem;
+            }
+
+            .ProfessionnelsSeparator {
+                width: 35%;
+            }
+        }
+
+        .Professionnels3 {
+            .Professionnels3_ContentLeft {
+                .Professionnels3_Title {
+                    font-size: 1.5rem;
+                }
+
+                .Professionnels3_Text {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .ProfessionnelsProgramme {
+            .ProfessionnelsProgramme_Cards {
+                width: 90%;
+
+                .ProfessionnelsProgramme_Card {
+                    .ProfessionnelsProgramme_CardTitle {
+                        font-size: 1.5rem;
+                    
+                    }
+
+                    .ProfessionnelsProgramme_TextTitle {
+                        font-size: 1.2rem;
+                    }
+
+                    .ProfessionnelsProgramme_TextPourQui {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .ProfessionnelsProgramme_Ensemble {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Professionnels_container {
+        .Professionnels1 {
+            .Professionnels1_Text {
+                font-size: 0.8rem;
+            }
+
+            .ProfessionnelsSeparator {
+                width: 40%;
+            }
+        }
+
+        .Professionnels3 {
+            .Professionnels3_ContentLeft {
+                .Professionnels3_Title {
+                    font-size: 1.2rem;
+                }
+
+                .Professionnels3_Text {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+
+        .ProfessionnelsProgramme {
+            .ProfessionnelsProgramme_Ensemble {
+                font-size: 1.5rem;
+            }
         }
     }
 }
