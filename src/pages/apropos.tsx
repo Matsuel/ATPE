@@ -10,17 +10,13 @@ import ImgEscrime4 from '@/assets/imgEscrime4.jpg';
 import Subtitle from '@/Components/Subtitle/Subtitle';
 import Link from 'next/link';
 
-interface AProposProps {
-
-}
-
 interface MembreProps {
     picture: any;
     name: string;
     roles: string[];
 }
 
-const APropos = ({ }: AProposProps) => {
+const APropos = () => {
     return (
         <div className={styles.APropos_container}>
             <TabName name="A propos" />

@@ -22,11 +22,11 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;    
-        color: #000; 
+        align-items: center;
+        color: #000;
         border-radius: 20px;
-        background-color: #f9faff;  
-        padding-bottom: 20px; 
+        background-color: #f9faff;
+        padding-bottom: 20px;
 
         .MembreImage {
             padding-top: 20px;
@@ -115,5 +115,83 @@
 
     .AProposReseauButton:hover {
         background-color: rgba(0, 0, 0, 0.1)
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Members {
+        .Membre {
+            width: 70%;
+        }
+    }
+
+    .AProposReseau {
+        .AProposText {
+            width: 80%;
+        }
+
+        .AProposReseauImages {
+            width: 80%;
+            flex-direction: column;
+            gap: 60px;
+
+            .AProposReseauImage {
+                width: 80%;
+            }
+        }
+
+        .AProposReseauButton {
+            width: 80%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .Members {
+        .Membre {
+            width: 80%;
+        }
+    }
+
+    .AProposReseau {
+        width: 90%;
+
+        .AProposText {
+            width: 80%;
+        }
+
+        .AProposReseauImages {
+            padding: 20px;
+
+            .AProposReseauImage {
+                width: 100%;
+            }
+        }
+
+        .AProposReseauButton {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Members {
+        .Membre {
+            width: 90%;
+        }
+    }
+
+    .AProposReseau {
+        .AProposText {
+            width: 80%;
+            font-size: 1.2rem;
+        }
+
+        .AProposReseauImages {
+            .AProposReseauImage {
+                width: 100%;
+            }
+        }
     }
 }
