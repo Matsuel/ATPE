@@ -59,10 +59,6 @@ const Footer = ({ }: FooterProps) => {
             name: "Christelle Navarro",
             phone: "06 03 26 85 97"
         },
-        {
-            name: "Esther Cherpreau",
-            phone: "06 79 25 51 49"
-        }
     ]
 
     const email: string = "atpe75@gmail.com"

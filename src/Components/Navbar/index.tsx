@@ -15,7 +15,7 @@ interface Tab {
 const NavBar = ({ }: NavBarProps) => {
     const tab: Tab[] = [
         {
-            name: "Acceuil",
+            name: "Accueil",
             link: "/"
         },
         {
