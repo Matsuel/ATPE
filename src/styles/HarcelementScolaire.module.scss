@@ -75,3 +75,51 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .HarcelementScolaire_container {
+
+        .HarcelementScolaire_Phrase {
+            width: 80%;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .HarcelementScolaire_container {
+        .HarcelementScolaire_Images {
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+
+            .HarcelementScolaire_Image {
+                width: 80%;
+            }
+        }
+
+        .HarcelementScolaire_Phrases {
+            width: 80%;
+            gap: 10px;
+
+            .HarcelementScolaire_Phrase {
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .HarcelementScolaire_container {
+        .HarcelementScolaire_Phrase {
+            width: 100%;
+            font-size: 0.8rem;
+        }
+
+        .HarcelementScolaire_link {
+            font-size: 1rem;
+        }
+    }
+}
