@@ -36,3 +36,35 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .Particuliers_container {
+        .Particuliers_links {
+            .Particuliers_link {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Particuliers_container {
+        .Particuliers_links {
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 25%;
+            margin-bottom: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Particuliers_container {
+        .Particuliers_links {
+            margin-top: 30%;
+            .Particuliers_link {
+                font-size: 1rem;
+            }
+        }
+    }
+}
