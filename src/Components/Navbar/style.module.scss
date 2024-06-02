@@ -12,8 +12,12 @@
     justify-content: space-around;
     align-items: center;
 
+    .logo {
+        width: 200px;
+    }
+
     .NavBar_Content {
-        width: 65%;
+        width: 70%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -25,4 +29,49 @@
             font-size: 1.2rem;
         }
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .NavBar_container {
+        .logo {
+            width: 150px;
+        }
+
+        .NavBar_Content {
+            .Navbar_tab {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .NavBar_container {
+        .logo {
+            width: 100px;
+        }
+
+        .NavBar_Content {
+            width: 80%;
+
+            .Navbar_tab {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .NavBar_container {
+        .logo {
+            width: 50px;
+        }
+
+        .NavBar_Content {
+            .Navbar_tab {
+                font-size: 0.5rem;
+            }
+        }
+    }
+
 }

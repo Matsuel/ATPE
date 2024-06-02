@@ -39,7 +39,7 @@ const NavBar = ({ }: NavBarProps) => {
     return (
         <div className={styles.NavBar_container}>
             <div className={styles.NavBar_Content}>
-                <Image src={Logo} alt="logo" width={200} />
+                <Image src={Logo} alt="logo" className={styles.logo} />
                 {
                     tab.map((item: Tab, index: number) => {
                         return (
@@ -49,9 +49,6 @@ const NavBar = ({ }: NavBarProps) => {
                 }
 
             </div>
-
-
-
         </div>
     );
 };
