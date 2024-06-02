@@ -9,7 +9,7 @@
 
     .ViolenceHarcelement_Phrases {
         width: 100%;
-        height: 50vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,7 +27,7 @@
             background-image: url('../assets/imgEscrime11.jpg');
             background-size: cover;
             background-position: center;
-            filter: brightness(0.5);            
+            filter: brightness(0.5);
         }
 
         .ViolenceHarcelement_Phrase {
@@ -158,6 +158,124 @@
             object-fit: cover;
             object-position: center;
             border-radius: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ViolenceHarcelement_container {
+        .ViolenceHarcelement_Phrases {
+            padding: 20px;
+            .ViolenceHarcelement_Phrase {
+                font-size: 1.3rem;
+            }
+        }
+
+        
+        .ViolenceHarcelement_Programmes {
+            .ViolenceHarcelement_Programme {
+                .ViolenceHarcelement_Programme_title {
+                    font-size: 1.3rem;
+                }
+                .ViolenceHarcelement_Programme_para {
+                    font-size: 1rem;
+                }
+                .ViolenceHarcelement_Programme_step {
+                    font-size: 1rem;
+                }
+                .ViolenceHarcelement_Programme_footer {
+                    font-size: 1.3rem;
+                }
+                .ViolenceHarcelement_Programme_link {
+                    width: 90%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ViolenceHarcelement_container {
+        .ViolenceHarcelement_AntiViolences {
+            .ViolenceHarcelement_AntiViolences_Phrase {
+                font-size: 1.1rem;
+            }
+        }
+
+        .ViolenceHarcelement_Programmes {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .ViolenceHarcelement_Programme {
+                width: 80%;
+                .ViolenceHarcelement_Programme_title {
+                    font-size: 1.3rem;
+                }
+                .ViolenceHarcelement_Programme_para {
+                    font-size: 1rem;
+                }
+                .ViolenceHarcelement_Programme_step {
+                    font-size: 1rem;
+                }
+                .ViolenceHarcelement_Programme_footer {
+                    font-size: 1.3rem;
+                }
+                .ViolenceHarcelement_Programme_link {
+                    text-align: center;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .ViolenceHarcelement_Images {
+            flex-direction: column;
+            gap: 20px;
+
+            .ViolenceHarcelement_Image {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ViolenceHarcelement_container {
+        .ViolenceHarcelement_Phrases {
+            .ViolenceHarcelement_Phrase {
+                font-size: 1rem;
+            }
+        }
+
+        .ViolenceHarcelement_AntiViolences {
+            .ViolenceHarcelement_AntiViolences_Phrase {
+                font-size: 1rem;
+            }
+        }
+
+        .ViolenceHarcelement_Programmes {
+            width: 100%;
+            .ViolenceHarcelement_Programme {
+                width: 90%;
+                .ViolenceHarcelement_Programme_title {
+                    font-size: 1rem;
+                }
+                .ViolenceHarcelement_Programme_para {
+                    font-size: 0.8rem;
+                }
+                .ViolenceHarcelement_Programme_step {
+                    font-size: 0.8rem;
+                }
+                .ViolenceHarcelement_Programme_footer {
+                    font-size: 1rem;
+                }
+                .ViolenceHarcelement_Programme_link {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }
