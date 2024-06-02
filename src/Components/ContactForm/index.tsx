@@ -1,14 +1,9 @@
 import React from 'react';
-
 import styles from './ContactForm.module.scss';
 import Image from 'next/image';
 import Mail from '@/assets/mail.svg';
 
-interface ContactFormProps {
-
-}
-
-const ContactForm = ({ }: ContactFormProps) => {
+const ContactForm = () => {
     return (
         <div className={styles.ContactForm}>
             <div className={styles.ContactFormInfo}>

@@ -1,8 +1,6 @@
 import React from 'react';
 import NavBar from '@/Components/Navbar';
 import styles from '@/styles/Contact.module.scss';
-import Image from 'next/image';
-import Mail from '@/assets/mail.svg';
 import Footer from '@/Components/Footer';
 import ContactForm from '@/Components/ContactForm';
 import TabName from '@/Components/TabName';
@@ -22,18 +20,12 @@ const Contact = ({ }: ContactProps) => {
 
             <TopPic image={ImgEscrime3} text="Rencontrons-nous" />
 
-
-
             <div className={styles.ContactContent}>
                 <Subtitle text="Contactez-nous" />
                 <ContactForm />
-                
             </div>
 
             <Footer />
-
-
-
         </div>
     );
 };

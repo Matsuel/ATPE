@@ -78,3 +78,59 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .ContactForm {
+        width: 80%;
+
+        .ContactFormInfo {
+            .ContactText {
+                font-size: 1.2rem;
+            }
+
+            .ContactMail {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ContactForm {
+        width: 90%;
+
+        .ContactFormInfo {
+            .ContactText {
+                font-size: 1rem;
+            }
+
+            .ContactMail {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ContactForm {
+        .ContactFormInfo {
+            .ContactText {
+                font-size: 0.8rem;
+            }
+
+            .ContactMail {
+                font-size: 0.8rem;
+            }
+        }
+
+        .ContactFormNames {
+            flex-direction: column;
+            gap: 10px;
+
+            .ContactFormInput {
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
