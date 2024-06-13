@@ -7,14 +7,16 @@ import TabName from '@/Components/TabName';
 import TopPic from '@/Components/TopPic';
 import ImgEscrime3 from '@/assets/imgEscrime3.png';
 import Subtitle from '@/Components/Subtitle/Subtitle';
+import { Toaster } from 'sonner';
 
 interface ContactProps {
-
+    data: any
 }
 
-const Contact = ({ }: ContactProps) => {
+const Contact = ({ data }: ContactProps) => {
     return (
         <div className={styles.Contact_container}>
+            <Toaster position="bottom-right" />
             <TabName name="Contact" />
             <NavBar />
 
@@ -22,7 +24,7 @@ const Contact = ({ }: ContactProps) => {
 
             <div className={styles.ContactContent}>
                 <Subtitle text="Contactez-nous" />
-                <ContactForm />
+                <ContactForm data={data} />
             </div>
 
             <Footer />
@@ -31,3 +33,17 @@ const Contact = ({ }: ContactProps) => {
 };
 
 export default Contact;
+
+export async function getServerSideProps(context: any) {
+
+    return {
+        props: {
+            data: {
+                template_id: process.env.TEMPLATE_ID,
+                service_id: process.env.SERVICE_ID,
+                key: process.env.KEY
+            }
+        }
+    }
+
+}
